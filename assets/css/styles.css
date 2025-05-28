@@ -220,6 +220,7 @@ margin-left:10px;
 }
 
 /* Make all text inside dark-theme white */
+.dark-theme .hamburger,
 .dark-theme a,
 .dark-theme p,
 .dark-theme h1,
