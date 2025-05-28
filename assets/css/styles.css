@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"poppins" , sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#fff;
+    --text-color:#555;
+    --title-color:#000;
+}
+.dark-theme{
+    --background-color:#000;
+    --text-color:#999;
+    --title-color:#fff;
+}
+body{
+    background: var(--background-color);
+    color:var(--text-color);
+}
+
+.header{
+    background: url("/assets/images/backgroundheader.jpg");
+    width: 100%;
+    min-height:100vh;
+    padding:0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark Theme me Background Remove */
+.dark-theme .header {
+    background: none; /* Background image remove */
+    background-color: #121212; /* Dark theme ke liye solid color */
+}
+nav .navbar-brand{
+    font-size:30px;
+    /* color:#000; */
+    transition: color 0.5s;
+}
+
+nav .navbar-nav li a{
+    font-size:16px;
+    letter-spacing:0.05em;
+    font-weight:600;
+    
+}
+
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--title-color);
+    font-weight: 500;
+
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .nav-link {
+    color: white !important;
+}
+
+.toggle-btn{
+    background: #4864ff;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:100px;
+    height: 40px;
+    border-radius: 20px;
+    cursor:pointer;
+    margin-left: 15px;
+}
+
+.toggle-btn img{
+width:25px;
+margin-left:10px;
+}
+
+
+.content{
+    margin-top:10%;
+    max-width:600px;
+}
+
+.content h1{
+    font-size:80px;
+    font-family:serif;
+    color:var(--title-color);
+    font-weight: 600;
+}
+
+.content h1 .span-class{
+    font-family:serif;
+    font-weight:400;
+    font-style:italic;
+}
+
+.content a{
+    background:#4864ff;
+    color:#fff;
+    padding:10px 40px;
+    border-radius:30px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:30px;
+    text-decoration: none;
+}
+
+.image-box img{
+    width:500px;
+    display:block;
+}
+
+.image-box{
+    position: absolute;
+    bottom:30%;
+    right:10%;
+}
+.image-box img{
+
+    border-radius: 10%;
+}
+.pattern{
+    position:absolute;
+    top:0;
+    left:50%;
+    display: flex;
+    transform: rotate(40deg);
+    z-index:-1;
+}
+.pattern img{
+    width:450px;
+    position: absolute;
+    top:0;
+    left:0;
+    animation: move 1s linear infinite alternate-reverse; 
+}
+
+.pattern img:nth-child(1){
+    transform: rotate(-45deg) translate(-70px , -50px);
+}
+
+.pattern img:nth-child(1){
+    transform: rotate(65deg) translate(0px , -40px) scale(.8);
+}
+
+@keyframes move{
+    100%{
+        margin-left: 40px;
+        margin-top:20px;
+        opacity: 0.3;
+    }
+}
+
+
+
+/* about-us */
+.about li a{
+    color:#000;
+    display: inline-block;
+  height: 45px;
+  width: 45px;
+    font-size:30px;
+    border:2px solid #d4d4d4;
+    border-radius:50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.about li a:hover{
+    color:#EE8683;
+}
+.r-p{
+    padding-top:80px;
+    padding-bottom: 80px;
+    }
+
+    
+    
+/* Experience section*/
+.exp-class .progress{
+    height:10px;
+    border-radius:20px;
+    font-size:10px;
+
+}
+
+.progress-bar{
+    background-color: #EE8683 !important;
+}
+
+.exp-class label{
+    font-size: 20px;
+    margin:10px;
+}
+
+ .card {
+      background: var(--card-bg);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Dark Theme Styles */
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+/* Make all text inside dark-theme white */
+.dark-theme a,
+.dark-theme p,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6 {
+  color: white !important;
+}
